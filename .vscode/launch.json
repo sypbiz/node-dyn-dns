@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Main",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\lib\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/lib/**/*.js"
+            ]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Install",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\lib\\service.js",
+            "outFiles": [
+                "${workspaceFolder}/lib/**/*.js"
+            ],
+            "args": ["install"],
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Uninstall",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\lib\\service.js",
+            "outFiles": [
+                "${workspaceFolder}/lib/**/*.js"
+            ],
+            "args": ["uninstall"],
+        }
+    ]
+}
